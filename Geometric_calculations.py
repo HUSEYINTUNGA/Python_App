@@ -4,7 +4,7 @@ class Geometric_Calculations:
     def __init__(self,name):
         self.name = name
 
-#Daire Sınıfı       
+       
 class Circle(Geometric_Calculations):
     def __init__(self, radius):
         super().__init__("Daire")
@@ -17,7 +17,7 @@ class Circle(Geometric_Calculations):
     def Area(self):
         return np.pi*(self.radius**2)
 
-#Kare Sınıfı    
+
 class Square(Geometric_Calculations):
     def __init__(self,edge_length):
         super().__init__("Kare")
@@ -29,7 +29,7 @@ class Square(Geometric_Calculations):
     def Perimeter(self):
         return self.edge*4
 
-#Dikdörtgen Sınıfı  
+
 class Rectangle(Geometric_Calculations):
     def __init__(self,short_edge,long_edge):
         super().__init__("Dikdörtgen")
@@ -42,7 +42,7 @@ class Rectangle(Geometric_Calculations):
     def Perimeter(self):
         return 2*(self.short+self.long)
 
-# Düzgün Beşgen Sınıfı   
+  
 class Pentagon(Geometric_Calculations):
     def __init__(self, edge_length):
         super().__init__("Beşgen")
@@ -54,7 +54,7 @@ class Pentagon(Geometric_Calculations):
     def Perimeter(self):
         return 5*self.edge
     
-#Üçgen Sınıfı                
+               
 class Right_Triangle(Geometric_Calculations):
     def __init__(self,height,base_length):
         super().__init__("Üçgen")
@@ -92,7 +92,7 @@ class Cone(Geometric_Calculations):
         
     def SurfaceArea(self):
         return np.pi*(self.radius**2)+(2*np.pi*self.radius*self.a)        
-#Diamond,Hexagon,parallelogram,trapezoid
+
 
 class Cube(Geometric_Calculations):
     def __init__(self,edge_length):
