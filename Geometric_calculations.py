@@ -32,7 +32,7 @@ class Square(Geometric_Calculations):
 #Dikdörtgen Sınıfı  
 class Rectangle(Geometric_Calculations):
     def __init__(self,short_edge,long_edge):
-        super().__init__("Dikdortgen")
+        super().__init__("Dikdörtgen")
         self.short=short_edge
         self.long=long_edge
     
